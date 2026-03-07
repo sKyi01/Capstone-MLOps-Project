@@ -1,6 +1,7 @@
 cred.txt
 local_s3/
 
+models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
