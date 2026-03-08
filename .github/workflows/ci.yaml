@@ -1,16 +1,12 @@
 name: CI Pipeline
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   project-testing:
     runs-on: ubuntu-latest
 
-    steps: 
-
+    steps:
       - name: checkout code
         uses: actions/checkout@v3
 
@@ -33,7 +29,6 @@ jobs:
 
       - name: run pipeline
         env:
-          CAPSTONE_TEST: ${{ secrets.git rm -r --cached 'models/model.pkl'
-            git commit -m "stop tracking models/model.pkl"  }}
+          CAPSTONE_TEST: ${{ secrets.CAPSTONE_TEST }}
         run: |
           dvc repro
