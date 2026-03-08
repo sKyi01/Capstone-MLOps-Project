@@ -1,13 +1,16 @@
 name: CI Pipeline
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   project-testing:
     runs-on: ubuntu-latest
 
     steps: 
-    
+
       - name: checkout code
         uses: actions/checkout@v3
 
