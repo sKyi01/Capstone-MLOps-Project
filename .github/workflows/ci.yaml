@@ -28,5 +28,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: run pipeline
+        env:
+          CAPSTONE_TEST: ${{ secrets.git rm -r --cached 'models/model.pkl'
+            git commit -m "stop tracking models/model.pkl"  }}
         run: |
           dvc repro
