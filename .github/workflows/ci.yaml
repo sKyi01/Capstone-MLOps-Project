@@ -6,7 +6,8 @@ jobs:
   project-testing:
     runs-on: ubuntu-latest
 
-    steps:
+    steps: 
+    
       - name: checkout code
         uses: actions/checkout@v3
 
