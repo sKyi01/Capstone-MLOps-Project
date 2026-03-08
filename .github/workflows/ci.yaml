@@ -26,6 +26,7 @@ jobs:
       - name: install dependencies
         run: |
           pip install -r requirements.txt
+          pip install mlflow==3.10.1
 
       - name: run pipeline
         env:
